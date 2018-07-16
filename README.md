@@ -13,7 +13,7 @@ Beautiful, minimal and responsive. This is the latest development version of LZ-
 ```
 ├── README.md                   # Document
 ├── dist                        # zip file will be here
-├── package.json			    # the project document
+├── package.json                # the project document
 ├── src                         
 │   ├── built                   # the dest of files have been compiled
 │   ├── css                     
@@ -32,7 +32,7 @@ Beautiful, minimal and responsive. This is the latest development version of LZ-
 ├── default.hbs                 # the main template of blog
 ├── error-404.hbs               # not found page
 ├── error.hbs                   # error page
-├── page.hbs                    # 靜態文件(Image)
+├── page.hbs                    # articles page
 ├── post.hbs                    # single article page
 └── tag.hbs                     # category page
 ```
