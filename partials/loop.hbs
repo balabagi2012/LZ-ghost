@@ -1,0 +1,32 @@
+ {{! This is the post loop - each post will be output using this markup }} {{#foreach posts}}
+
+<a class="article-link" href="{{url}}">
+    <article class="box is-link {{post_class}}">
+        {{#if feature_image}}
+        <section class="post-image" style="background-image:url({{img_url feature_image}})"></section>
+        {{/if}}
+        <header class="post-header">
+            <h2 class="post-title">{{{title}}}</h2>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+                <span class="author">作者: {{author}}</span>
+            </section>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt words="20"}}...</p>
+        </section>
+
+        <div class="read-more">
+            <a href="{{url}}">閱讀全文</a>
+        </div>
+
+        <footer>
+            <div class="tag-footer">
+                <i class="tag-icon"></i>{{tags}}
+            </div>
+        </footer>
+
+
+    </article>
+</a>
+{{/foreach}} {{! Previous/next page links - displayed on every page }} {{pagination}}
