@@ -1,0 +1,48 @@
+<main id="content" class="content" role="main">
+
+    <div id="article" class="box has-image">
+        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/45306452_255937308404321_2165255453871702016_o.png?_nc_cat=102&_nc_ht=scontent-tpe1-1.xx&oh=3d032e80638799a1c759649ff63611d7&oe=5C83347A"
+            class="post-image" />
+    </div>
+
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                <span class="author">by {{authors}}</span>
+            </section>
+        </header>
+
+        <section class="post-content" style="min-height:300px">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 響應式廣告 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5456714957151693" data-ad-slot="9964467890"
+                data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+        <footer class="post-footer">
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="fa fa-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute=" true "}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute=" true "}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="fa fa-google" href="https://plus.google.com/share?url={{url absolute=" true "}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+    </article>
+
+    </div>
+</main>

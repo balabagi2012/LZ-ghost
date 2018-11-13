@@ -8,6 +8,14 @@
     padding: 2.5em 1em;
 }
 
+.kg-width-wide {
+    width: 80%;
+}
+
+.kg-width-full {
+    width: 100%;
+}
+
 .user-name {
     font-size: 2.5rem;
     margin: 1rem 0;
@@ -47,7 +55,7 @@
         top: -45px;
         display: inline-block;
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: -4px;
             left: -4px;
@@ -157,7 +165,7 @@
     }
     .tag-icon {
         display: flex;
-        margin-right: .8em;
+        margin-right: 0.8em;
         background-image: url(./folder.png);
         background-position: center center;
         height: 2rem;
@@ -179,14 +187,14 @@
             border: none;
             background-color: #3eb0ef;
             color: #fff;
-            transition: .5s background-color;
+            transition: 0.5s background-color;
         }
     }
 }
 
 .header-nav {
     border-bottom: 1px solid #d8dce5;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 0 3px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
 }
 
 .sidebox:not(.aboutMe) .sidebox-title {
@@ -199,7 +207,7 @@
 
 .sidebox .sidebox-title {
     position: relative;
-    padding: 0.1em .8em;
+    padding: 0.1em 0.8em;
     font-family: "微軟正黑體", "Microsoft JhengHei";
     font-size: 22px;
     font-weight: bold;

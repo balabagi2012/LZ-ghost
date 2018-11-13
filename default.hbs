@@ -14,8 +14,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/webkid.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/plugin.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
-    /> {{!-- This tag outputs SEO meta+structured data and other important settings --}} {{ghost_head}}
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}} {{ghost_head}}
 </head>
 
 <body class="{{body_class}}">
@@ -27,7 +27,16 @@
         </div>
     </footer>
 
-
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
 
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
@@ -35,7 +44,8 @@
     <script type="text/javascript" src="{{asset "js/jquery.xml2json.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/webkid.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script> {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script> {{!-- Ghost outputs important scripts and
+    data with this tag - it should always be the very last thing before the closing
     body tag --}} {{ghost_foot}}
 </body>
 

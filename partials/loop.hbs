@@ -1,4 +1,4 @@
- {{! This is the post loop - each post will be output using this markup }} {{#foreach posts}}
+{{! This is the post loop - each post will be output using this markup }} {{#foreach posts}}
 
 <a class="article-link" href="{{url}}">
     <article class="box is-link {{post_class}}">
@@ -9,7 +9,7 @@
             <h2 class="post-title">{{{title}}}</h2>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
-                <span class="author">作者: {{author}}</span>
+                <span class="author">作者: {{authors}}</span>
             </section>
         </header>
         <section class="post-excerpt">
